@@ -1,3 +1,8 @@
 .navbar-brand {
 	padding: 1px;
 }
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
