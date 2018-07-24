@@ -53,3 +53,14 @@ CREATE TABLE "auth_cas"(
     "renew" CHAR(1)
 );
 success!
+timestamp: 2018-07-18T13:15:36.889000
+CREATE TABLE "users"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "db_firstname" CHAR(512),
+    "db_lastname" CHAR(512),
+    "db_phonenumber" CHAR(512),
+    "db_gender" CHAR(512),
+    "db_email" CHAR(512),
+    "db_password" CHAR(512)
+);
+success!

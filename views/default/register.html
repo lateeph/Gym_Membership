@@ -9,49 +9,48 @@
   <title></title>
 </head>
 <body>
-
-</body>
-</html>
-<form>
   <div class="container">
     <div class="row">
-      <div class="form-group">
-        <label for="exampleInputFirstName">FirstName</label>
-        <input type="text" class="form-control" id="exampleInputFirstName" placeholder="FirstName" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputLastName">LastName</label>
-        <input type="text" class="form-control" id="exampleInputLastName" placeholder="LastName" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputLastName">PhoneNumber</label>
-        <input class="form-control" id="inputPhone" maxlength="10" name="phone" size="3" title="" type="tel" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputGender">Gender</label>
-        <div>
-          <label class="custom-control custom-radio">
-            <input id="radio1" name="radio" type="radio" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Male</span>
-          </label>
-          <label class="custom-control custom-radio">
-            <input id="radio2" name="radio" type="radio" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Female</span>
-          </label>
+      <form action="{{=URL('store')}}" method="post">
+        <div class="form-group">
+          <label for="exampleInputFirstName">FirstName</label>
+          <input type="text" class="form-control" id="exampleInputFirstName" name="firstname" placeholder="FirstName" required>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-      </div>
-      <div>
-        <input type="submit" class="btn btn-primary" value="Save User">
-      </div>
+        <div class="form-group">
+          <label for="exampleInputLastName">LastName</label>
+          <input type="text" class="form-control" id="exampleInputLastName" name="lastname" placeholder="LastName" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputLastName">PhoneNumber</label>
+          <input class="form-control" id="inputPhone" maxlength="10" name="phonenumber" size="3" title="" type="tel" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputGender">Gender</label>
+          <div>
+            <label class="radio-inline">
+              <input type="radio" id="female" name="gender" value="Female">Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" id="male" name="gender" value="Male">Male
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-primary" value="Save User">
+        </div>
+      </form>
+    </div>
   </div>
-</form>
+  <script src="{{=URL('static','js/jquery.js')}}"></script> 
+  <script src="{{=URL('static','js/bootstrap.js')}}"></script>
+</body>
+</html>
+  
