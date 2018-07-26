@@ -1,56 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="{{=URL('static','css/bootstrap.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}">
-  <title></title>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <form action="{{=URL('store')}}" method="post">
-        <div class="form-group">
-          <label for="exampleInputFirstName">FirstName</label>
-          <input type="text" class="form-control" id="exampleInputFirstName" name="firstname" placeholder="FirstName" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputLastName">LastName</label>
-          <input type="text" class="form-control" id="exampleInputLastName" name="lastname" placeholder="LastName" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputLastName">PhoneNumber</label>
-          <input class="form-control" id="inputPhone" maxlength="10" name="phonenumber" size="3" title="" type="tel" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputGender">Gender</label>
-          <div>
-            <label class="radio-inline">
-              <input type="radio" id="female" name="gender" value="Female">Female
-            </label>
-            <label class="radio-inline">
-              <input type="radio" id="male" name="gender" value="Male">Male
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
-        </div>
+{{extend 'my_layout.html'}}
+<div class="container">
+  <div class="row">
+    <form action="{{=URL('store')}}" method="post">
+      <div class="form-group">
+        <label for="exampleInputFirstName">FirstName</label>
+        <input type="text" class="form-control" id="exampleInputFirstName" name="firstname" placeholder="FirstName" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputLastName">LastName</label>
+        <input type="text" class="form-control" id="exampleInputLastName" name="lastname" placeholder="LastName" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputLastName">PhoneNumber</label>
+        <input class="form-control" id="inputPhone" maxlength="10" name="phonenumber" size="3" title="" type="tel" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputGender">Gender</label>
         <div>
-          <input type="submit" class="btn btn-primary" value="Save User">
+          <label class="radio-inline">
+            <input type="radio" id="female" name="gender" value="Female">Female
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="male" name="gender" value="Male">Male
+          </label>
         </div>
-      </form>
-    </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
+      </div>
+      <div>
+        <input type="submit" class="btn btn-primary" value="Save User">
+      </div>
+    </form>
   </div>
-  <script src="{{=URL('static','js/jquery.js')}}"></script> 
-  <script src="{{=URL('static','js/bootstrap.js')}}"></script>
-</body>
-</html>
-  
+</div>
+{{include}}
