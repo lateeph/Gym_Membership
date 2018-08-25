@@ -35,5 +35,8 @@ def seeUsers():
 def login():
 	return dict()
 
-def qqq():
+def charges():
 	return dict()
+
+def schedule():
+	return locals()

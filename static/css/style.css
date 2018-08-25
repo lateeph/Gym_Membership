@@ -1,9 +1,21 @@
-.navbar-brand {
-	padding: 1px;
+.form-div {
+	margin-top: 1px;
+	border: 1px solid #333;
+	border-color: black;
+	padding: 20px;
+	background-color: white;
+	background: transparent !important; 
 }
 
-
-.jumbotron div{ 
-	color:white;
+.jumbotron {
+	margin-top: 70px;
+	color: white;
 }
 
+a {
+	color: white;
+}
+
+table {
+	color: white;
+}
